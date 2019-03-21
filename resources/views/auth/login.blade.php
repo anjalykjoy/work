@@ -3,7 +3,7 @@
 @section('content')
 <div class="login-box">
   <div class="login-logo">
-    <a href="#"><b>Admin</b>LTE</a>
+    <a href="#"><b>Sign</b>In</a>
   </div>
   <!-- /.login-logo -->
   <div class="login-box-body">
@@ -42,15 +42,15 @@
                            
                       
 
-                        <div class="row">
-                            <div class="col-xs-8">
+                         <div class="row">
+                            <!-- <div class="col-xs-8">
                                 <div class="checkbox icheck">
                                     <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
                                     <label class="form-check-label" for="remember">
                                         {{ __('Remember Me') }}
                                     </label>
                                 </div>
-                            </div>
+                            </div> --> 
                         
                         <div class="col-xs-4">
                             <button type="submit" class="btn btn-primary btn-block btn-flat"> {{ __('Login') }}</button>
@@ -61,7 +61,9 @@
                                         {{ __('Forgot Your Password?') }}
                             </a>
                         @endif
-                            
+                        <a class="btn btn-link" href="{{ url('/register') }}">
+                                        {{ __('New User Registration') }}
+                            </a>    
                        </div>
                     </form>
                 </div>
